@@ -26,3 +26,7 @@ variable "sqlDbName" {
     type        = "map"
     description = "(Required) Nomes do bancos de dados."
 }
+variable "sqlServer_name" {
+    type        = "map"
+    description = "(Required) Nome do servidor SQL."
+}

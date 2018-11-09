@@ -32,7 +32,7 @@ resource "azurerm_app_service" "appservice" {
 
   tags    {
         environment  = "${var.ambiente}"
-        cc           = "${var.centrocusto}"
+        CC           = "${var.centrocusto}"
         departamento = "${var.departamento}"
         sistema      = "${var.sistema}"
         version		   = "${var.versao}"

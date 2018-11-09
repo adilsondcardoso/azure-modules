@@ -26,3 +26,7 @@ variable "centrocusto" {
 variable "departamento" {
     description = "(Required) Nome do departamento solicitante"
 }
+variable "tipo_recurso" {
+    type        = "string"
+    description = "(Required) Nome do recurso abreviado. (e.g ai, app, api, logicapp, sqldb, sqlserver, etc)"
+}

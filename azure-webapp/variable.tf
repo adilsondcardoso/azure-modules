@@ -36,4 +36,7 @@ variable "servicePlanId" {
 variable "instrumentation_key" {
     description = "(Required) Chave do do Application Insights para recurso"
 }
-
+variable "tipo_recurso" {
+    type        = "string"
+    description = "(Required) Nome do recurso abreviado. (e.g ai, app, api, logicapp, sqldb, sqlserver, etc)"
+}

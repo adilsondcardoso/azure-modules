@@ -1,6 +1,6 @@
 resource "azurerm_app_service" "appservice" {
   count               = "${length(var.listApi)}"
-  name                = "${lower("${var.seguradora}${lookup(var.listApi, count.index)}api${var.ambiente}")}"
+  name                = "${lower("${var.seguradora}${lookup(var.listApi, count.index)}${var.tipo_recurso}${var.ambiente}")}"
   location            = "${var.location}"
   resource_group_name = "${var.resourcegroup_name}"
   app_service_plan_id = "${var.servicePlanId}"

@@ -29,3 +29,12 @@ variable "sqlDbName" {
 variable "sqlServer_name" {
     description = "(Required) Nome do servidor SQL."
 }
+variable "tipo_recurso" {
+    type        = "string"
+    description = "(Required) Nome do recurso abreviado. (e.g ai, app, api, logicapp, sqldb, sqlserver, etc)"
+}
+variable "sql_collation" {
+    type        = "string"
+    description = "(Optional) Tipo de collation do banco de dados"
+    default     = "SQL_Latin1_General_CP1_CI_AS"
+}

@@ -1,6 +1,6 @@
 resource "azurerm_sql_database" "db" {
     count               = "${length(var.sqlDbName)}"
-    name                = "${lower("${var.seguradora}${lookup(var.sqlDbName, count.index)}${var.tipo_recurso}${var.ambiente}")}"
+    name                = "${lower("${lookup(var.sqlDbName, count.index)}")}"
     resource_group_name = "${var.resourcegroup_name}"
     location            = "${var.location}"
     collation           = "${var.sql_collation}"

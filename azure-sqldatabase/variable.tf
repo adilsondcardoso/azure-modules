@@ -31,7 +31,7 @@ variable "sqlServer_name" {
 }
 variable "tipo_recurso" {
     type        = "string"
-    description = "(Required) Nome do recurso abreviado. (e.g ai, app, api, logicapp, sqldb, sqlserver, etc)"
+    description = "(Removed) Nome do recurso abreviado. (e.g ai, app, api, logicapp, sqldb, sqlserver, etc)"
 }
 variable "sql_collation" {
     type        = "string"
